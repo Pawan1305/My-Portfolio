@@ -1,7 +1,7 @@
 
 import './main2.css'
 import codechef from './images/codechef1.png'
-import instagram from './images/instagram.jpg'
+// import instagram from './images/instagram.jpg'
 import github from './images/github.png'
 import linked_in from './images/linked_in.png'
 import { motion } from 'framer-motion';
@@ -30,16 +30,16 @@ const Main = () => {
         <div className="flex1">
         <p className='follow_me'>follow me: </p>
         <div className="logos">
-        <a href="#"><img src={codechef} alt="" /></a>
+        {/* <a href="https://www.codechef.com/users/pawan1305" target="_blank"><img src={codechef} alt="" /></a> */}
         <a href="https://github.com/pawan1305" target="_blank" rel="noreferrer"><img src={github} alt=""  /></a>
         <a href="https://www.linkedin.com/in/pawan1305" target="_blank" rel="noreferrer"><img src={linked_in} alt=""></img></a>
         <a href="https://leetcode.com/u/Pawan_P1/" target="_blank" rel="noreferrer"><img src={leetcodes} alt=""></img></a>
-        <a href="https://www.instagram.com/pawan13.me/"><img src={instagram} alt="" /></a>
+        {/* <a href="https://www.instagram.com/pawan13.me/" target="_blank"><img src={instagram} alt="" /></a> */}
         </div>
         </div>
         <div className="flex1">
-        <a href="mailto:vamsipraneeth2004@gmail.com"><button className='buttonc'>E-Mail Me</button></a>
-        <button onClick={() => window.open("https://drive.google.com/file/d/1D0MarEA_vK0HZWumDiLTwoMApKx4UkQT/view?usp=sharing", "_blank")} className='buttonb'>Resume</button>
+        <a href="mailto:pawan.punnu.k@gmail.com"><button className='buttonc'>E-Mail Me</button></a>
+        <button onClick={() => window.open("https://pawan1305.github.io/My-CV/", "_blank")} className='buttonb'>Resume</button>
         </div>
       </div>
       <div className="right_main">
