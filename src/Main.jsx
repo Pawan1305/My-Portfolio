@@ -1,6 +1,7 @@
 
 import './main2.css'
 import codechef from './images/codechef1.png'
+import instagram from './images/instagram.jpg'
 import github from './images/github.png'
 import linked_in from './images/linked_in.png'
 import { motion } from 'framer-motion';
@@ -23,16 +24,17 @@ const Main = () => {
     className='Main' id="mainy">
       <div className="main_left">
         <h3 className='it_is_me'>Hey! It's Me</h3>
-        <h2 className='names'>Vamsi Praneeth</h2>
+        <h2 className='names'>Pawan</h2>
         <p className='i_am_a'>I am a&nbsp;<span class="typewriter"></span></p>
         
         <div className="flex1">
         <p className='follow_me'>follow me: </p>
         <div className="logos">
-        <a href="https://www.codechef.com/users/dark_knight31"><img src={codechef} alt="" /></a>
-        <a href="https://github.com/Praneeth2025" target="_blank" rel="noreferrer"><img src={github} alt=""  /></a>
-        <a href="https://www.linkedin.com/in/vamsi-praneeth-92458a259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer"><img src={linked_in} alt=""></img></a>
-        <a href="https://leetcode.com/u/pG477o7BXM/" target="_blank" rel="noreferrer"><img src={leetcodes} alt=""></img></a>
+        <a href="#"><img src={codechef} alt="" /></a>
+        <a href="https://github.com/pawan1305" target="_blank" rel="noreferrer"><img src={github} alt=""  /></a>
+        <a href="https://www.linkedin.com/in/pawan1305" target="_blank" rel="noreferrer"><img src={linked_in} alt=""></img></a>
+        <a href="https://leetcode.com/u/Pawan_P1/" target="_blank" rel="noreferrer"><img src={leetcodes} alt=""></img></a>
+        <a href="https://www.instagram.com/pawan13.me/"><img src={instagram} alt="" /></a>
         </div>
         </div>
         <div className="flex1">

@@ -26,7 +26,7 @@ const AboutMe = () => {
       className='about_me'  id="aboutMey">
       <h2 className='heading'>About Me</h2>
     <div className="about_me_info">
-        <p className='about_me_left'>Hello! I'm M. Vamsi Praneeth, a budding Full Stack Developer and AI/ML enthusiast. I am diving into front-end and back-end technologies, as well as exploring AI and machine learning tools like TensorFlow and PyTorch. Excited to connect and collaborate on innovative projects!</p>
+        <p className='about_me_left'>I am Pawan, MERN stack developer with a passion for coding and problem-solving, Graduated with Bachelors degree. I am dedicated to creating efficient and innovative solutions.Learning continuously and Excited about building user-centric and scalable applications to make a positive impact in the digital world. Currently, I am working as a backend developer and looking forward to connect with you.</p>
         {/* <div className="about_me_right"></div> */}
     </div>
 
