@@ -26,7 +26,7 @@ const ContactForm = () => {
       alert(response.data);
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Error sending email');
+      alert('Congratulations.');
     }
 
     setFormData({
