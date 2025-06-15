@@ -28,7 +28,7 @@ async function sendMail(formData) {
       service: 'gmail',
       auth: {
         type: 'OAuth2',
-        user: 'vamsipraneeth2004@gmail.com',
+        user: 'pawan.punnu.k@gmail.com',
         clientId: CLIENT_ID,
         clientSecret: CLIENT_SECRET,
         refreshToken: REFRESH_TOKEN,
@@ -38,7 +38,7 @@ async function sendMail(formData) {
 
     const mailOptions = {
       from: formData.email,
-      to: '22cs01031@iitbbs.ac.in', // Replace with your email address
+      to: 'pawan.punnu.k@gmail.com', // Replace with your email address
       subject: 'Contact Form Submission',
       text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
     };
