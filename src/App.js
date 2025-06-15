@@ -6,6 +6,7 @@ import AboutMe from './About_me';
 import Main from './Main';
 import Skills from './Skills';
 import WhyHireMe from './WhyHireMe';
+import Experience from './Experience';
 import Projects from './projects';
 import ContactForm from './ContactForm';
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Navbar/>
       <Main id="mainy" />
       <AboutMe id="aboutMey" />
+      <Experience id="experience" />
       <WhyHireMe />
       <Skills id="skills" />
       <Projects id="project" />

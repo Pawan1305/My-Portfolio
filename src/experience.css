@@ -1,0 +1,63 @@
+.experience-section {
+  padding: 80px 20px;
+  /* background-color: #0f172a; */
+  color: #f8fafc;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.experience-heading {
+  font-size: 42px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.experience-card {
+  background: linear-gradient(135deg, #1e293b 0%, #1e293b 100%);
+  padding: 32px;
+  margin-bottom: 40px;
+  border-left: 6px solid #38bdf8;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.2);
+}
+
+.role {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #e0f2fe;
+}
+
+.company {
+  font-weight: 400;
+  color: #94a3b8;
+  font-size: 22px;
+}
+
+.period {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 18px;
+}
+
+.responsibilities {
+  padding-left: 22px;
+  list-style-type: disc;
+  color: #e2e8f0;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.responsibilities li {
+  margin-bottom: 10px;
+}
