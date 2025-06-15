@@ -1,26 +1,26 @@
 import React from 'react'
 import Card from './Card';
-import restaurant from"./images/ivan-stern-LOLSb7m6XkU-unsplash.jpg"
-import chess from"./images/chess.jpg"
+import photography from"./images/photography.jpg"
+import ecommerce from"./images/ecommerce.jpg"
+import movieMania from"./images/movieMania.png"
 import snake from "./images/snake.jpg"
-import wise_way from"./images/wise_way.jpg"
 import { motion } from 'framer-motion';
 
 const Projects = () => {
     const cards = [
         {
-          imageUrl: restaurant,
-          altText: 'Resataurant website',
-          title: 'Restaurant Website',
-          description: 'A dynamic and responsive restaurant website showcasing menu, online reservations, customer reviews, and contact information.',
+          imageUrl: photography,
+          altText: 'Photography website',
+          title: 'Photography Website',
+          description: 'A stunning photography website showcasing a portfolio of breathtaking images, with features for galleries, client proofing, and contact information.',
           explore:"https://pawan1305.github.io/PSD-Design/"
         },
         {
-          imageUrl:chess,
-          altText: 'Chess',
-          title: 'Chess image recognizer',
-          description: '"An AI-powered chess system that recognizes physical pieces and plays autonomously using computer vision and advanced game algorithms."',
-          explore:"#"
+          imageUrl:ecommerce,
+          altText: 'E-commerce',
+          title: 'E-commerce Website',
+          description: 'A fully functional e-commerce website featuring product listings, shopping cart functionality, and secure payment processing.',
+          explore:"https://tangerine-gingersnap-3c8b63.netlify.app/"
 
         },
         {
@@ -31,10 +31,10 @@ const Projects = () => {
           explore:"https://pawan1305.github.io/Snake_Game/"
         },
         {
-            imageUrl: wise_way,
-            altText: 'prime_video',
-            title: 'Prime Video Clone',
-            description: "The design replicates the layout and styling of the original platform, featuring a responsive navbar, hero sections, and neatly organized carousels for displaying content.",
+            imageUrl: movieMania,
+            altText: 'Movie Mania',
+            title: 'Movie Mania',
+            description: "The design replicates the layout and styling of the OTT platform, featuring a responsive navbar, hero sections, and neatly organized carousels for displaying content.",
             explore:"https://pawan1305.github.io/Prime-Video-Clone/"
           }
       ];
