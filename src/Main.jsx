@@ -1,13 +1,11 @@
 
 import './main2.css'
-import codechef from './images/codechef1.png'
-// import instagram from './images/instagram.jpg'
+import hackerearth from './images/hackerearth1.png'
 import github from './images/github.png'
 import linked_in from './images/linked_in.png'
 import { motion } from 'framer-motion';
 import leetcodes from './images/leetcodes.png';
-
-
+// import instagram from './images/instagram.jpg'
 
 const Main = () => {
   return (
@@ -31,9 +29,10 @@ const Main = () => {
         <p className='follow_me'>follow me: </p>
         <div className="logos">
         {/* <a href="https://www.codechef.com/users/pawan1305" target="_blank"><img src={codechef} alt="" /></a> */}
-        <a href="https://github.com/pawan1305" target="_blank" rel="noreferrer"><img src={github} alt=""  /></a>
         <a href="https://www.linkedin.com/in/pawan1305" target="_blank" rel="noreferrer"><img src={linked_in} alt=""></img></a>
+        <a href="https://github.com/pawan1305" target="_blank" rel="noreferrer"><img src={github} alt=""  /></a>
         <a href="https://leetcode.com/u/Pawan_P1/" target="_blank" rel="noreferrer"><img src={leetcodes} alt=""></img></a>
+        <a href="https://www.hackerearth.com/@pawan.kumar.13" target="_blank" rel="noreferrer"><img src={hackerearth} alt=""></img></a>
         {/* <a href="https://www.instagram.com/pawan13.me/" target="_blank"><img src={instagram} alt="" /></a> */}
         </div>
         </div>

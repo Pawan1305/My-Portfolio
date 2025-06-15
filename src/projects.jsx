@@ -13,14 +13,14 @@ const Projects = () => {
           altText: 'Resataurant website',
           title: 'Restaurant Website',
           description: 'A dynamic and responsive restaurant website showcasing menu, online reservations, customer reviews, and contact information.',
-          explore:"https://github.com/Praneeth2025/zenith-bistro"
+          explore:"https://pawan1305.github.io/PSD-Design/"
         },
         {
           imageUrl:chess,
           altText: 'Chess',
           title: 'Chess image recognizer',
           description: '"An AI-powered chess system that recognizes physical pieces and plays autonomously using computer vision and advanced game algorithms."',
-          explore:"https://github.com/Praneeth2025/chess-image-recognizer"
+          explore:"#"
 
         },
         {
@@ -28,14 +28,14 @@ const Projects = () => {
           altText: 'Canyons',
           title: 'Gesture Snake Game',
           description: "an innovative twist on the classic snake game, allowing players to control the snake's movements through hand gestures, providing an engaging and interactive gaming experience.",
-          explore:"https://github.com/Praneeth2025/Gesture-Snake"
+          explore:"https://pawan1305.github.io/Snake_Game/"
         },
         {
             imageUrl: wise_way,
-            altText: 'wise_way',
-            title: 'WiseWay',
-            description: "a web application that uses advanced algorithms to calculate the most cost-effective route between two points.",
-            explore:"https://github.com/Praneeth2025/WiseWay-website"
+            altText: 'prime_video',
+            title: 'Prime Video Clone',
+            description: "The design replicates the layout and styling of the original platform, featuring a responsive navbar, hero sections, and neatly organized carousels for displaying content.",
+            explore:"https://pawan1305.github.io/Prime-Video-Clone/"
           }
       ];
 
