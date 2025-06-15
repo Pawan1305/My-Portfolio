@@ -4,6 +4,7 @@ import photography from"./images/photography.jpg"
 import ecommerce from"./images/ecommerce.jpg"
 import movieMania from"./images/movieMania.png"
 import snake from "./images/snake.jpg"
+import weather from "./images/weather.png"
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -25,9 +26,9 @@ const Projects = () => {
         },
         {
           imageUrl: snake,
-          altText: 'Canyons',
-          title: 'Gesture Snake Game',
-          description: "an innovative twist on the classic snake game, allowing players to control the snake's movements through hand gestures, providing an engaging and interactive gaming experience.",
+          altText: 'Snake Game',
+          title: 'Snake Game',
+          description: "An innovative twist on the classic snake game, allowing players to control the snake's movements through keyboard, providing an engaging and interactive gaming experience.",
           explore:"https://pawan1305.github.io/Snake_Game/"
         },
         {
@@ -36,6 +37,13 @@ const Projects = () => {
             title: 'Movie Mania',
             description: "The design replicates the layout and styling of the OTT platform, featuring a responsive navbar, hero sections, and neatly organized carousels for displaying content.",
             explore:"https://pawan1305.github.io/Prime-Video-Clone/"
+          },
+          {
+            imageUrl: weather,
+            altText: 'Weather App',
+            title: 'Weather App',
+            description: "A weather application that provides real-time weather updates and forecasts for any location.",
+            explore:"https://pawan1305.github.io/Weather/"
           }
       ];
 
