@@ -1,8 +1,74 @@
 .heading{
-    color:white;
+    color: #fff;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 35px;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+.heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    margin: 16px auto 0 auto;
+    border-radius: 2px;
+}
+
+.about_me {
+    margin-top: 8%;
+    background: rgba(30, 34, 90, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 40px 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 0.3s;
+}
+.about_me:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+.about_me_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about_me_left {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.92);
+    width: 55%;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    background: rgba(255,255,255,0.04);
+    padding: 24px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+}
+
+@media (max-width: 900px) {
+    .about_me_info {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .about_me_left, .about_me_right {
+        width: 100%;
+        padding: 18px 10px;
+    }
+    .about_me {
+        padding: 24px 8px;
+    }
 }
 
 .about_me_left{
