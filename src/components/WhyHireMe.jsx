@@ -77,13 +77,14 @@ const WhyHireMe = () => {
                     <div className="flex2">
                         <div className="box">
                             <img src={codechef} alt="" className='why_logo' />
-                            <h4 className='mid_text'>4★</h4>
-                            <p className='main_text_why'>Codechef Rating</p>
+                            <h4 className='mid_text'>5★</h4>
+                            {/* <p className='main_text_why'>Codechef Rating</p> */}
+                            <p className='main_text_why'>Problem Solver</p>
                         </div>
                         <div className="box ">
                             <img src={leetcode} alt="" className='why_logo' />
-                            <h4 className='mid_text'>150</h4>
-                            <p className='main_text_why'>LeetCode Problems Solved</p>
+                            <h4 className='mid_text'>DSA</h4>
+                            <p className='main_text_why'>Mastering DSA and System Design</p>
                         </div>
                     </div>
                 </motion.div>
