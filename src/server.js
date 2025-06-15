@@ -1,59 +1,30 @@
 // server.js
 
 const express = require('express');
-const nodemailer = require('nodemailer');
-const { google } = require('googleapis');
-const dotenv = require('dotenv');
 const cors = require('cors');
-
-dotenv.config();
+const { Resend } = require('resend');
 
 const app = express();
 app.use(express.json());
 app.use(cors()); // Enable CORS if your frontend is on a different domain
 
-const CLIENT_ID = "451973533648-2a6n0dbhi8jnuiqcjkalf3ldd0tjsh39.apps.googleusercontent.com";
-const CLIENT_SECRET = "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";
-const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
-const REFRESH_TOKEN = "1//047gs1_-D3SN5CgYIARAAGAQSNwF-L9Irs3tY3zeqv3Bj_OlewABkB-zuzxZSPnLQXgZexkWvcsDtt6gPKVpI6dfraQ1Q4lmNUxI";
-
-const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
-oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
-
-async function sendMail(formData) {
-  try {
-    const accessToken = await oAuth2Client.getAccessToken();
-
-    const transport = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        type: 'OAuth2',
-        user: 'pawan.punnu.k@gmail.com',
-        clientId: CLIENT_ID,
-        clientSecret: CLIENT_SECRET,
-        refreshToken: REFRESH_TOKEN,
-        accessToken: accessToken,
-      },
-    });
-
-    const mailOptions = {
-      from: formData.email,
-      to: 'pawan.punnu.k@gmail.com', // Replace with your email address
-      subject: 'Contact Form Submission',
-      text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
-    };
-
-    const result = await transport.sendMail(mailOptions);
-    return result;
-  } catch (error) {
-    throw new Error('Error sending email:', error);
-  }
-}
-
 // Route to handle email sending
 app.post('/api/send', async (req, res) => {
   try {
-    const result = await sendMail(req.body);
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'johncena989673@gmail.com',
+      subject: 'New Contact Form Submission',
+      html: `<p><strong>Name:</strong> ${req.body.name}</p>
+             <p><strong>Email:</strong> ${req.body.email}</p>
+             <p><strong>Message:</strong><br>${req.body.message}</p>`
+    }, {
+      headers: {
+        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      }
+    });
     res.status(200).send('Email sent successfully');
   } catch (error) {
     console.error('Error sending email:', error);
