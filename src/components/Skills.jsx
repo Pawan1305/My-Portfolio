@@ -1,6 +1,6 @@
 import React from 'react'
-import './skills.css'
-import './new.css'
+import '../styles/skills.css'
+import '../styles/new.css'
 import { motion } from 'framer-motion';
 import SemiDonutChart from './SemiDonutChart';
 

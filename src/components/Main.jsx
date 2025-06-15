@@ -1,9 +1,9 @@
-import "./main2.css";
-import hackerearth from "./images/hackerearth1.png";
-import github from "./images/github.png";
-import linked_in from "./images/linked_in.png";
+import "../styles/main2.css";
+import hackerearth from "../images/hackerearth1.png";
+import github from "../images/github.png";
+import linked_in from "../images/linked_in.png";
 import { motion } from "framer-motion";
-import leetcodes from "./images/leetcodes.png";
+import leetcodes from "../images/leetcodes.png";
 // import profileImg from './images/MyPhoto.jpeg';
 // import instagram from './images/instagram.jpg'
 

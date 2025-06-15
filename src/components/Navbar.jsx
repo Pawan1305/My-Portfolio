@@ -1,6 +1,5 @@
 
-import './main.css';
-import React, { useState, useEffect } from 'react';
+import '../styles/main.css';
 import { Link as ScrollLink } from 'react-scroll';
 
 
@@ -34,6 +33,23 @@ const Navbar = () => {
           >
             About Me
           </ScrollLink>
+
+          
+
+           <ScrollLink
+            to="experience-card"
+            spy={true}
+            smooth={true}
+            offset={-140} // Adjust offset if you have a fixed header
+            duration={600} // Animation duration in milliseconds
+            className='button'
+          >
+            Experience
+          </ScrollLink>
+
+
+
+
           <ScrollLink
             to="skills"
             spy={true}

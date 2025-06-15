@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import Navbar from './Navbar';
+import './styles/App.css';
+import Navbar from './components/Navbar';
 
-import AboutMe from './About_me';
-import Main from './Main';
-import Skills from './Skills';
-import WhyHireMe from './WhyHireMe';
-import Experience from './Experience';
-import Projects from './projects';
-import ContactForm from './ContactForm';
+import AboutMe from './components/About_me';
+import Main from './components/Main';
+import Skills from './components/Skills';
+import WhyHireMe from './components/WhyHireMe';
+import Experience from './components/Experience';
+import Projects from './components/projects';
+import ContactForm from './components/ContactForm';
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Initial loading state
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './experience.css';
+import '../styles/experience.css';
 import { motion } from 'framer-motion';
 
 const ExperienceCard = ({ role, company, period, responsibilities }) => (

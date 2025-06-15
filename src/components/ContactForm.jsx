@@ -5,7 +5,7 @@ import { faEnvelope, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-i
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import BackToTopButton from './BackToTopButton';
-import './stylle.css';
+import '../styles/stylle.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

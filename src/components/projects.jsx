@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './Card';
-import photography from"./images/photography.jpg"
-import ecommerce from"./images/ecommerce.jpg"
-import movieMania from"./images/movieMania.png"
-import snake from "./images/snake.jpg"
-import weather from "./images/weather.png"
+import photography from"../images/photography.jpg"
+import ecommerce from"../images/ecommerce.jpg"
+import movieMania from"../images/movieMania.png"
+import snake from "../images/snake.jpg"
+import weather from "../images/weather.png"
 import { motion } from 'framer-motion';
 
 const Projects = () => {
