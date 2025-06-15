@@ -69,11 +69,39 @@
 body{
     background-color: #151925;
 }
-.title{
-    color:white;
-    font-family:"Poppins", sans-serif;
-    font-weight: 600;
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  background: linear-gradient(90deg, #00cefc, #3c1d4b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+
+.title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 60%;
+  background: linear-gradient(90deg, #00cefc, #3c1d4b);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+  animation: underlineSlide 1s ease-in-out forwards;
+}
+
+@keyframes underlineSlide {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 60%;
+    opacity: 1;
+  }
+}
+
 
 
 @keyframes typing {

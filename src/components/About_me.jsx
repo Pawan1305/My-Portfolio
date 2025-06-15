@@ -1,37 +1,33 @@
-import React from 'react'
-import '../styles/about_me.css'
+import React from 'react';
+import '../styles/about_me.css';
 import { motion } from 'framer-motion';
+import { FaUserAlt } from 'react-icons/fa';
 
 const AboutMe = () => {
   return (
-    <motion.div
-    initial={{
-     opacity:0,
-     y:40
-    }} 
-    whileInView={
-     {
-       opacity:1,
-       y:0
-     }
-    }
-    
-    transition={{
-     delay:0.2,
-     duration:0.5
-    }}
-    viewport={{
-      once:true
-     }}
-      className='about_me'  id="aboutMey">
-      <h2 className='heading'>About Me</h2>
-    <div className="about_me_info">
-        <p className='about_me_left'>I am Pawan, MERN stack developer with a passion for coding and problem-solving, Graduated with Bachelors degree. I am dedicated to creating efficient and innovative solutions.Learning continuously and Excited about building user-centric and scalable applications to make a positive impact in the digital world. Currently, I am working as a backend developer and looking forward to connect with you.</p>
-    </div>
+    <motion.section
+      className="about-me-wrapper"
+      id="aboutMey"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      viewport={{ once: true }}
+    >
+      <div className="about-me-header">
+        <FaUserAlt className="about-icon" />
+        <h2 className="about-me-heading">About Me</h2>
+      </div>
 
-    </motion.div>
-    
-  )
-}
+      <motion.p
+        className="about-me-description"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        I'm <strong>Pawan</strong>, a MERN Stack Developer passionate about crafting impactful digital solutions. I bring strong backend experience using <strong>Node.js</strong> and <strong>Express.js</strong> and enjoy working on scalable, user-focused applications. I thrive in collaborative teams, constantly upskilling, and currently serve as a Backend Developer. I’m enthusiastic about building purposeful tech and open to meaningful connections.
+      </motion.p>
+    </motion.section>
+  );
+};
 
-export default AboutMe
+export default AboutMe;
