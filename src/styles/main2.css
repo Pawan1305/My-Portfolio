@@ -1,4 +1,309 @@
-.it_is_me{
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 120%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.main_left {
+  width: 45%;
+  margin-top: 3%;
+}
+
+.right_main {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.it_is_me {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.names {
+  color: #03B0FD;
+  font-family: "Inder", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: left;
+  margin: 0;
+}
+
+.i_am_a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.follow_me {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+}
+
+.logos img {
+  height: 30px;
+  width: 30px;
+  margin: 0 7px;
+}
+
+.buttonb {
+  padding: 12.5px 30px;
+  height: 50px;
+  width: 150px;
+  border: 0;
+  border-radius: 25px;
+  background-color: #03B0FD;
+  color: #151925;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.5s;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.buttonb:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.buttonb:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.buttonc {
+  cursor: pointer;
+  padding: 12.5px 30px;
+  height: 50px;
+  width: 150px;
+  border: 2px solid #03B0FD;
+  border-radius: 25px;
+  background-color: #151925;
+  color: #03B0FD;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+.buttonc:hover {
+  background-color: #151925;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.buttonc:active {
+  background-color: #151925;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.dev-visual {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+}
+
+.dev-blob {
+  position: absolute;
+  inset: 12%;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 206, 252, 0.28), rgba(60, 29, 75, 0.58));
+  filter: blur(32px);
+  border-radius: 40% 60% 55% 45%;
+  animation: blob-move 12s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+.dev-grid {
+  position: absolute;
+  inset: 8%;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+  border-radius: 26px;
+  mask-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.9), transparent 70%);
+  animation: grid-fade 6s ease-in-out infinite alternate;
+}
+
+.behind_the_image {
+  position: relative;
+  width: 78%;
+  max-width: 360px;
+  z-index: 2;
+  filter: drop-shadow(0 16px 40px rgba(0,0,0,0.45));
+  animation: floaty 5.5s ease-in-out infinite;
+}
+
+.floating-badge {
+  position: absolute;
+  bottom: 12%;
+  right: 8%;
+  background: rgba(21, 25, 37, 0.92);
+  border: 1px solid rgba(0, 206, 252, 0.35);
+  color: #e8f3ff;
+  padding: 10px 14px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  z-index: 3;
+  animation: floaty 6.5s ease-in-out infinite;
+}
+
+.floating-badge p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7dd3ff;
+}
+
+.floating-badge span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@keyframes blob-move {
+  0%, 100% { border-radius: 40% 60% 55% 45%; transform: translateY(0); }
+  50% { border-radius: 55% 45% 40% 60%; transform: translateY(-8px); }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes grid-fade {
+  0% { opacity: 0.25; }
+  100% { opacity: 0.5; }
+}
+
+@media (max-width: 1024px) {
+  .Main {
+    margin-top: 14%;
+    padding: 0 24px;
+    gap: 32px;
+  }
+
+  .main_left,
+  .right_main {
+    width: 48%;
+  }
+
+  .names {
+    font-size: 46px;
+  }
+
+  .i_am_a,
+  .it_is_me,
+  .follow_me {
+    font-size: 20px;
+  }
+
+  .buttonb,
+  .buttonc {
+    width: 140px;
+    height: 46px;
+    font-size: 14px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Main {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 16px;
+  }
+
+  .main_left,
+  .right_main {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .dev-visual {
+    max-width: 340px;
+    margin: 0 auto 32px;
+  }
+
+  .names {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .i_am_a,
+  .it_is_me,
+  .follow_me {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .flex1 {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .buttonb,
+  .buttonc {
+    width: auto;
+    min-width: 130px;
+    margin-left: 0;
+    padding: 10px 18px;
+  }
+
+  .logos img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .names {
+    font-size: 32px;
+  }
+
+  .i_am_a,
+  .it_is_me,
+  .follow_me {
+    font-size: 16px;
+  }
+
+  .buttonb,
+  .buttonc {
+    font-size: 13px;
+    min-width: 120px;
+  }
+}.it_is_me{
     color:white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
