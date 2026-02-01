@@ -61,3 +61,54 @@ img.why_logo {
 .up_gap{
     margin-top:10%;
 }
+
+@media (max-width: 1024px) {
+    .heading1 {
+        font-size: 30px;
+    }
+
+    .mid_text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .neww {
+        flex-direction: column;
+        height: auto;
+        gap: 18px;
+    }
+
+    .modiv {
+        width: 100%;
+    }
+
+    .box {
+        max-width: 90%;
+        height: auto;
+        padding: 18px 14px 24px;
+        margin: 0 auto;
+    }
+
+    .heading1 {
+        margin: 14% 0 4% 0;
+    }
+
+    .mid_text {
+        text-align: center;
+    }
+
+    .main_text_why {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading1 {
+        font-size: 26px;
+    }
+
+    .mid_text {
+        font-size: 20px;
+    }
+}

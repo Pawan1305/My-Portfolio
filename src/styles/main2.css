@@ -127,4 +127,100 @@
     height:100px;
   }
   
-    
+
+@media (max-width: 1024px) {
+  .Main {
+    margin-top: 14%;
+    padding: 0 24px;
+    gap: 32px;
+  }
+
+  .main_left,
+  .right_main {
+    width: 48%;
+  }
+
+  .names {
+    font-size: 46px;
+  }
+
+  .i_am_a,
+  .it_is_me,
+  .follow_me {
+    font-size: 20px;
+  }
+
+  .buttonb,
+  .buttonc {
+    width: 140px;
+    height: 46px;
+    font-size: 14px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Main {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 16px;
+  }
+
+  .main_left,
+  .right_main {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .names {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .i_am_a,
+  .it_is_me,
+  .follow_me {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .flex1 {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .buttonb,
+  .buttonc {
+    width: auto;
+    min-width: 130px;
+    margin-left: 0;
+    padding: 10px 18px;
+  }
+
+  .logos img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .names {
+    font-size: 32px;
+  }
+
+  .i_am_a,
+  .it_is_me,
+  .follow_me {
+    font-size: 16px;
+  }
+
+  .buttonb,
+  .buttonc {
+    font-size: 13px;
+    min-width: 120px;
+  }
+}
+
+

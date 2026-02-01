@@ -45,6 +45,8 @@ html {
   transition: var(--transition);
   width: 40rem; /* Initial width for each card */
   margin-bottom: 3rem; /* Vertical margin between cards */
+  flex: 1 1 300px;
+  max-width: 420px;
 }
 
 .grid .card:hover {
@@ -105,5 +107,45 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    gap: 2.4rem;
+    padding: 0 2rem;
+  }
+
+  .grid .card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .grid .card__header {
+    font-size: 2.4rem;
+  }
+
+  .grid .card__text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    padding: 0 1.2rem;
+  }
+
+  .grid .card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .grid .card__img {
+    height: 16rem;
+  }
+
+  .grid .card__btn {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+  }
 }
 
