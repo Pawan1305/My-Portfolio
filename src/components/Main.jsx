@@ -49,7 +49,7 @@ const Main = () => {
               <img src={github} alt="" />
             </a>
             <a
-              href="https://leetcode.com/u/Pawan_P1/"
+              href="https://leetcode.com/u/pawan1305/"
               target="_blank"
               rel="noreferrer"
             >
